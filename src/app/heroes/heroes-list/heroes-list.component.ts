@@ -17,7 +17,10 @@ export class HeroesListComponent implements OnInit {
   }
 
   getHeroes():void{
-    this.heroesList = this.heroService.getHeroes()
+    this.heroService.getHeroes()
+    .subscribe(res => {
+      this.heroesList =  res; 
+    })
   }
 
 }

@@ -7,7 +7,7 @@ import { FormsModule } from "@angular/forms";
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroFormComponent } from './heroes/hero-form/hero-form.component';
 import { HeroesListComponent } from './heroes/heroes-list/heroes-list.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +18,8 @@ import { HeroesListComponent } from './heroes/heroes-list/heroes-list.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

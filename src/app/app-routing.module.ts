@@ -7,7 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path : 'heroes' , component:HeroesComponent
+    path : 'heroes' , component:HeroesComponent 
   },
   {
     path: ''  , redirectTo : 'heroes' , pathMatch : 'full'
@@ -16,7 +16,7 @@ const routes: Routes = [
     path : 'heroes/list' , component:HeroesListComponent
   },
   {
-    path : 'heroes/form' , component:HeroFormComponent
+    path : 'heroes/form' , component:HeroFormComponent  
   }
 
 ];
